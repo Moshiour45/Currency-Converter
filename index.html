@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#f0f4f8] flex flex-col justify-center items-center h-screen">
+    <div
+        class="bg-[#ffffff] h-auto w-[90%] max-w-md p-8 rounded-2xl shadow-lg flex flex-col justify-center items-center space-y-6">
+
+        <div class="text-center">
+
+            <h1 class="text-3xl font-extrabold text-gray-800">Currency Converter</h1>
+            <p class="text-gray-400 text-sm mt-1 font-medium">Get real-time exchange rates</p>
+
+        </div>
+
+        <div class="w-full flex flex-col space-y-6 dropdowns">
+
+            <label class="text-gray-600 mb-1 font-medium">Enter your amount</label>
+
+            <input type="number" value="1"
+                class="border-2 border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-[#4f9ca8] focus:outline-none">
+
+            <div class="flex justify-between items-center">
+
+                <div class="flex flex-col items-center space-y-2 from">
+
+                    <p class="text-gray-600 font-medium text-2xl">From</p>
+
+                    <img src="https://flagsapi.com/US/shiny/64.png" alt="flags" class="w-20 h-20">
+
+                    <select name="from"
+                        class="border-2 border-gray-300 rounded-lg p-1 w-24 focus:outline-none focus:ring-2 focus:ring-[#4f9ca8]">
+
+                    </select>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right-arrow-left text-3xl text-[#4f9ca8]"></i>
+
+                <div class="flex flex-col items-center space-y-2 to">
+
+                    <p class="text-gray-600 font-medium text-2xl">To</p>
+                    <img src="https://flagsapi.com/BD/shiny/64.png" alt="flags" class="w-20 h-20">
+
+                    <select name="to" class=" border-2 border-gray-300 rounded-lg p-1 w-24 focus:outline-none focus:ring-2
+                        focus:ring-[#4f9ca8]">
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="flex justify-center items-center mt-4">
+                <p class="text-gray-700 font-medium bg-gray-100 p-2 rounded-lg shadow-sm msg">1 USD = 122.26 BDT</p>
+            </div>
+
+            <button
+                class="bg-[#4f9ca8] text-white font-semibold py-2 rounded-lg shadow-md hover:bg-[#3b7a84] transition duration-300 cursor-pointer">
+                Convert
+            </button>
+
+        </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
